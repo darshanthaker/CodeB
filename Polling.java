@@ -10,20 +10,21 @@ public class Polling
 	private final String USERNAME = "GreenBeans";
 	private final String PASSWD = "darshan";
 	HashMap<String, ArrayList<ArrayList<String>>> hash = new HashMap<String, ArrayList<ArrayList<String>>>();
+	//ArrayList<String> networths = new ArrayList<String>();
 	
-	
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		Polling poller = new Polling();
 		try
 		{
 			poller.poll();
+			
 		}
 		catch (Exception e)
 		{
 			e.printStackTrace();
 		}
-	}
+	}*/
 	
 	public void poll() throws IOException
 	{
@@ -40,7 +41,7 @@ public class Polling
             //System.out.println(line);
             
             String[] sectmp = line.split(" ");
-            System.out.println(sectmp.length);
+            //System.out.println(sectmp.length);
             for (int i = 1; i < sectmp.length; i = i + 4)
             {
             	ArrayList<ArrayList<String>> values = new ArrayList<ArrayList<String>>();

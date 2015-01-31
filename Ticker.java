@@ -11,7 +11,7 @@ public class Ticker {
     	private void getBidAsk(String str) {
         	double[] result = new double[2];
         	String[] list = str.split("\\s+");
-        	name = list[3]; //where the ticker occurs
+        	name = list[2]; //where the ticker occurs
         	int bid = Arrays.asList(list).indexOf("BID");
         	result[0] = Double.parseDouble(list[bid + 2]);
         	int ask = Arrays.asList(list).indexOf("ASK");
